@@ -38,8 +38,8 @@ function riseParticipantsBtn(localStorageKey, getData) {
         if (!e.target.classList.contains('registration')) {
             return;
         }
-        let currentParticipantsText = e.target.closest('tr').querySelector('.current-participants').textContent;
-        let maxParticipantsText = e.target.closest('tr').querySelector('.max-participants').textContent;
+        const currentParticipantsText = e.target.closest('tr').querySelector('.current-participants').textContent;
+        const maxParticipantsText = e.target.closest('tr').querySelector('.max-participants').textContent;
         if (currentParticipantsText === maxParticipantsText) {
             e.target.disabled = true;
             alert('Достигнуто максимальное количество участников');
@@ -67,7 +67,7 @@ function decreaseParticipantsBtn(localStorageKey, getData) {
         if (!e.target.classList.contains('cancel-registration')) {
             return;
         }
-        let currentParticipantsText = e.target.closest('tr').querySelector('.current-participants').textContent;
+        const currentParticipantsText = e.target.closest('tr').querySelector('.current-participants').textContent;
         const decCurrentParticipantsText = parseInt(currentParticipantsText) - 1;
         e.target.closest('tr').querySelector('.current-participants').textContent = decCurrentParticipantsText;
         e.target.disabled = true;
