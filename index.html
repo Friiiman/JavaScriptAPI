@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        table,
+        td {
+            border: 2px solid black;
+        }
+
+        table {
+            table-layout: fixed;
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        thead {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        tbody {
+            font-size: 14px;
+        }
+
+        td {
+            padding: 10px 20px;
+            text-align: center;
+        }
+    </style>
+    <script src="index.js" defer></script>
+</head>
+
+<body>
+
+    <table>
+        <thead>
+            <tr>
+                <td>Название занятия</td>
+                <td>Время проведения занятия</td>
+                <td>Макс. кол-во участников</td>
+                <td>Текущее кол-во участников</td>
+                <td>Запись</td>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+</body>
+
+</html>
